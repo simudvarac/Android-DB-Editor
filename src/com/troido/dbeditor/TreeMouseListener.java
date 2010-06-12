@@ -37,7 +37,8 @@ public class TreeMouseListener implements MouseListener {
 	if (sqlitepath==null){
 		try{
 		Properties props=new Properties();
-	    props.load(new FileReader("settings/settings.ini"));
+		String iniPath=new File(TreeMouseListener.class.getProtectionDomain().getCodeSource().getLocation().getPath()).getParent()+"/settings.ini";
+	    props.load(new FileReader(iniPath));
 	    sqlitepath=props.getProperty("sqliteeditorpath");
 		}catch(Exception e){
 			e.printStackTrace();

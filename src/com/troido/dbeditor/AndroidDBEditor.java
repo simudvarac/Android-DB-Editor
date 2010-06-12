@@ -68,7 +68,7 @@ public class AndroidDBEditor extends JFrame {
 	}
 
 	public AndroidDBEditor() {
-		super("Android DB Viewer");
+		super("Android DB Editor");
 		this.setVisible(true);
 		List<String> deviceNames = ADBConnector.devices();
 		for (String deviceName : deviceNames) {

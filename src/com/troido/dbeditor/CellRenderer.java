@@ -38,7 +38,7 @@ public class CellRenderer implements TreeCellRenderer {
 		JLabel label = new JLabel();
 		TreeObject obj = (TreeObject) ((DefaultMutableTreeNode) value)
 				.getUserObject();
-		label.setIcon(new ImageIcon(obj.getIconPath()));
+		label.setIcon(new ImageIcon(getClass().getResource("/"+obj.getIconPath())));
 		label.setText(obj.getName());
 		return label;
 	}

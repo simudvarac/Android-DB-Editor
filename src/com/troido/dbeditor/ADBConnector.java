@@ -14,7 +14,7 @@ software distributed under the License is distributed on an
 "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations
-under the License.    
+under the License.
 */
 
 package com.troido.dbeditor;
@@ -114,15 +114,15 @@ public class ADBConnector {
 			throw new RuntimeException(exc);
 		}
 	}
-	
+
 	public static void uploadDB(Database db,File dbFile) {
 		try {
-		
+
 			runADBCommand(db.getDeviceName(), "push "+dbFile.getPath()+" " + db.getDBPath());
-				
+
 		} catch (Exception exc) {
 			throw new RuntimeException(exc);
 		}
 	}
-	
+
 }

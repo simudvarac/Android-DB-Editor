@@ -14,7 +14,7 @@ software distributed under the License is distributed on an
 "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations
-under the License.    
+under the License.
 */
 
 package com.troido.dbeditor;
@@ -32,7 +32,7 @@ import javax.swing.tree.DefaultMutableTreeNode;
 public class TreeMouseListener implements MouseListener {
 
 	public static String sqlitepath;
-	
+
 	public TreeMouseListener() {
 	if (sqlitepath==null){
 		try{
@@ -45,7 +45,7 @@ public class TreeMouseListener implements MouseListener {
 		}
 	}
 	}
-	
+
 	@Override
 	public void mouseClicked(MouseEvent e) {
 		if (e.getClickCount() == 2) {

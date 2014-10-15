@@ -14,7 +14,7 @@ software distributed under the License is distributed on an
 "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations
-under the License.    
+under the License.
 */
 package com.troido.dbeditor;
 
@@ -33,8 +33,8 @@ public class Package  implements TreeObject, Comparable<Package>{
 	public void addDatabase(Database db){
 		this.databases.add(db);
 	}
-	
-	
+
+
 	public String getName() {
 		return name;
 	}
@@ -58,5 +58,5 @@ public class Package  implements TreeObject, Comparable<Package>{
 	public String getIconPath() {
 		return "img/package.png";
 	}
-	
+
 }
